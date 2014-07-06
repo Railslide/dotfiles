@@ -1,0 +1,5 @@
+[user]
+	name = Giulia Vergottini
+	email = hello@railslide.io
+[core]
+	excludesfile = /home/giulia/.gitignore_global
