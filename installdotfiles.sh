@@ -39,6 +39,6 @@ if [ -d $sublimedir ]; then	# check whether the directory already exists
     echo "...done"
 fi
 echo "Creating symlink to Users in $sublimedir"
-ln -s $dir/sublime/Users $sublimedir
+ln -s $dir/sublime/User $sublimedir
 echo "...done"
 
