@@ -1,0 +1,4 @@
+{
+    //Autocompletion on dot
+    "auto_complete_triggers": [{"selector": "source.python - comment - string", "characters": "."}]
+}

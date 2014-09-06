@@ -2,10 +2,11 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Anaconda",
+		"Djaneiro",
 		"GenerateUUID",
 		"Markdown Preview",
 		"ScopeHunter",
-		"SideBarEnhancements",
-		"SublimePythonIDE"
+		"SideBarEnhancements"
 	]
 }
