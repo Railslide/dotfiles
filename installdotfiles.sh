@@ -20,7 +20,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     if [ -a  ~/.$file ]; then	 # check if a dotfile already exists
         echo "Moving any existing dotfiles from ~ to $olddir"
@@ -32,13 +32,20 @@ done
 
 echo "...done"
 
-# move Sublime Text Users directory to dotfiles_old directory, then create symlink
+# Create symlink for Sublime Text User directory
 if [ -d $sublimedir ]; then	# check whether the directory already exists
-    echo "Moving the existing Sublime Text Users directory from $sublimedir to $olddir"
-    mv $sublimedir $olddir
-    echo "...done"
+
+    if [ -L $sublimedir ]; then
+        echo "Removing old symlink"
+        rm $sublimedir
+        echo "...done"
+    else
+        echo "Moving the existing Sublime Text Users directory from $sublimedir to $olddir"
+        mv $sublimedir $olddir
+        echo "...done"
+    fi
 fi
-echo "Creating symlink to Users in $sublimedir"
+echo "Creating symlink to User in $sublimedir"
 ln -s $dir/sublime/User $sublimedir
 echo "...done"
 
