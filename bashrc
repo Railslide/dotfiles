@@ -103,6 +103,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Virtualenvwrapper loader
-VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
-PROJECT_HOME='/home/giulia/Projects'
+export WORKON_HOME=/home/giulia/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+export PROJECT_HOME='/home/giulia/Projects'
 source /usr/local/bin/virtualenvwrapper.sh
