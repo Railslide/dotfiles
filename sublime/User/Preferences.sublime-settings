@@ -12,6 +12,7 @@
 	"line_padding_top": 1,
 	"show_definitions": false,
 	"tab_size": 4,
+	"theme": "Gravity One.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
