@@ -11,6 +11,8 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"show_definitions": false,
+	"show_encoding": true,
+	"show_line_endings": true,
 	"tab_size": 4,
 	"theme": "Gravity One.sublime-theme",
 	"translate_tabs_to_spaces": true,
