@@ -3,3 +3,5 @@
 	email = hello@railslide.io
 [core]
 	excludesfile = /home/giulia/.gitignore_global
+[push]
+	default = simple
