@@ -6,18 +6,9 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Anaconda",
-		"Babel",
-		"Djaneiro",
-		"Dockerfile Syntax Highlighting",
-		"GenerateUUID",
 		"Indent XML",
-		"Markdown Preview",
+		"MarkdownPreview",
 		"Package Control",
-		"requirementstxt",
-		"ScopeHunter",
-		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
 		"Theme - Gravity"
 	]
 }

@@ -1,9 +1,9 @@
 {
 	"anaconda_gutter_theme": "hard",
-	"color_scheme": "Packages/User/Rocket-Peacock.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Rocket-Peacock (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Dejavu Sans Mono",
-	"font_size": 10.5,
+	"font_size": 9.5,
 	"ignored_packages":
 	[
 		"Vintage"
