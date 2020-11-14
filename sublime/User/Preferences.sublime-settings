@@ -1,5 +1,4 @@
 {
-	"anaconda_gutter_theme": "hard",
 	"color_scheme": "Packages/User/SublimeLinter/Rocket-Peacock (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Dejavu Sans Mono",
@@ -10,11 +9,6 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"rulers":
-	[
-		80
-	],
-	"show_definitions": false,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 4,
