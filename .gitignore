@@ -1,0 +1,6 @@
+# Only track the Sublime Text config files I care about and ignore 
+# the rest (easier said than done due to subdirectories)
+sublime/.config/sublime-text-3/*
+!sublime/.config/sublime-text-3/Packages
+sublime/.config/sublime-text-3/Packages/*
+!sublime/.config/sublime-text-3/Packages/User
