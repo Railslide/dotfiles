@@ -4,3 +4,8 @@ sublime/.config/sublime-text-3/*
 !sublime/.config/sublime-text-3/Packages
 sublime/.config/sublime-text-3/Packages/*
 !sublime/.config/sublime-text-3/Packages/User
+
+# Only track minpac (as a submodule) and ignore all the other plugins
+vim/.vim/pack/minpac/start/*
+vim/.vim/pack/minpac/opt/*
+!vim/.vim/pack/minpac/opt/minpac
