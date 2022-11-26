@@ -1,8 +1,8 @@
-stow:
+stow-all:
 	stow --dotfiles -t ~ */
 
-delete:
+delete-all:
 	stow --delete --dotfiles -t ~ */
 
-restow:
+restow-all:
 	stow --restow --dotfiles -t ~ */
