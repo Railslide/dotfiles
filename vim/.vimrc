@@ -19,6 +19,9 @@ function! PackInit() abort
 
   " ALE (Asynchronous Lint Engine)
   call minpac#add('dense-analysis/ale')
+
+  " lightline statusline
+  call minpac#add('itchyny/lightline.vim')
 endfunction
 
 " Define user commands for updating/cleaning the plugins.
@@ -34,3 +37,15 @@ command! PackStatus packadd minpac | call minpac#status()
 
 " ALE
 let g:ale_sign_column_always = 1   " always show the sign column
+let g:ale_fix_on_save = 1          " fix files on save
+
+" fixers
+let g:ale_fixers = {
+\   '*': [
+\	'remove_trailing_lines',
+\       'trim_whitespace'
+\   ],
+\}
+
+" lightline
+set noshowmode  " do not show mode below the statusline
