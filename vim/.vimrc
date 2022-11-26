@@ -1,8 +1,20 @@
+" ------------------------------------------------------------------------
+"  General
+"  -----------------------------------------------------------------------
+
 " Show line numbers
 set number
 
 " Ignore case when searching
 set ignorecase
+
+" Respect case if there are capital letters in the search string
+set smartcase
+
+" Convert tabs into 4 spaces
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 
 "-------------------------------------------------------------------------
 " Plugin manager
@@ -42,7 +54,7 @@ let g:ale_fix_on_save = 1          " fix files on save
 " fixers
 let g:ale_fixers = {
 \   '*': [
-\	'remove_trailing_lines',
+\       'remove_trailing_lines',
 \       'trim_whitespace'
 \   ],
 \}
