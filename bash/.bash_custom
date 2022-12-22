@@ -18,3 +18,8 @@ eval "$(pyenv init -)"
 
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
+
+# Load local bash settings if present
+if [ -f ~/.bash_local ]; then
+. ~/.bash_local
+fi
