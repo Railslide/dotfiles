@@ -3,3 +3,5 @@ vim.g.lightline = {
         left = { { 'filename', 'modified' } },
     }
 }
+
+vim.opt.showmode = false
