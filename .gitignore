@@ -9,3 +9,6 @@ sublime/.config/sublime-text-3/Packages/*
 vim/.vim/pack/minpac/start/*
 vim/.vim/pack/minpac/opt/*
 !vim/.vim/pack/minpac/opt/minpac
+
+# Packer.nvim compiled file
+neovim/.config/nvim/plugin/packer_compiled.lua
