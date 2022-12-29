@@ -15,17 +15,18 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 vim.cmd([[ 
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost packer.lua source <afile> | PackerSync
+    autocmd BufWritePost plugin-manager.lua source <afile> | PackerSync
   augroup end
 ]])
 
 -- Installed plugins
 return require('packer').startup(function(use)
     
+  -- Packer (aka the plugin manager itself)
   use 'wbthomason/packer.nvim'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+
+  -- statusline
+  use 'itchyny/lightline.vim'
 
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
