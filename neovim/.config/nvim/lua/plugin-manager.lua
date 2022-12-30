@@ -12,7 +12,7 @@ end
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- Reload Neovim and installs/updates/removes plugins when this file is saved
-vim.cmd([[ 
+vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugin-manager.lua source <afile> | PackerSync
@@ -21,7 +21,7 @@ vim.cmd([[
 
 -- Installed plugins
 return require('packer').startup(function(use)
-    
+
   -- Packer (aka the plugin manager itself)
   use 'wbthomason/packer.nvim'
 
@@ -30,6 +30,9 @@ return require('packer').startup(function(use)
 
   -- Linting
   use 'dense-analysis/ale'
+
+  -- Color scheme
+  use 'navarasu/onedark.nvim'
 
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
