@@ -1,7 +1,8 @@
 vim.g.lightline = {
-    inactive = { 
+    inactive = {
         left = { { 'filename', 'modified' } },
-    }
+    },
+    colorscheme = 'one'
 }
 
 vim.opt.showmode = false
