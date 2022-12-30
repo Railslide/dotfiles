@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
   -- Statusline
   use 'itchyny/lightline.vim'
 
+  -- Linting
+  use 'dense-analysis/ale'
+
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
   if packer_bootstrap then
