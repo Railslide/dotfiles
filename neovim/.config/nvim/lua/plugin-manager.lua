@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
   -- Packer (aka the plugin manager itself)
   use 'wbthomason/packer.nvim'
 
-  -- statusline
+  -- Statusline
   use 'itchyny/lightline.vim'
 
   -- Automatically set up configurations if packer was newly installed
