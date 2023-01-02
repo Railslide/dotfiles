@@ -38,5 +38,12 @@ return require('packer').startup(function(use)
   -- This needs to be at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
+
+    print '=================================='
+    print '    Plugins are being installed'
+    print '    Wait until Packer completes,'
+    print '       then restart nvim'
+    print '=================================='
+
   end
 end)
