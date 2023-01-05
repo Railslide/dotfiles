@@ -34,6 +34,12 @@ return require('packer').startup(function(use)
   -- Color scheme
   use 'navarasu/onedark.nvim'
 
+  -- Find all the things
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
   if packer_bootstrap then
