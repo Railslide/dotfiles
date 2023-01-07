@@ -22,3 +22,9 @@ fi
 > fi
 > ```
 > However, such a workaround comes with a performance cost as the terminal will take longer to load.
+
+## Neovim
+
+Make sure the following requisites are met:
+- Neovim >= v0.7.0
+- [ripgrep](https://github.com/BurntSushi/ripgrep) installed on the system
