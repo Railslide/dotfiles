@@ -5,4 +5,4 @@ if not status_ok then
 end
 
 vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fs', telescope_builtin.live_grep, {})

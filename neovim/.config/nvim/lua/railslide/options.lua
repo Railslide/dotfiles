@@ -15,3 +15,5 @@ vim.opt.splitright = true -- create vertical splits on the right of the current 
 vim.opt.splitbelow = true -- create horizontal splits below the current one
 
 vim.opt.signcolumn = "yes" -- always show column sign to prevent text from jumping left/right
+
+vim.opt.iskeyword:append({ "-" }) -- Threat hyphenated words as a single word
