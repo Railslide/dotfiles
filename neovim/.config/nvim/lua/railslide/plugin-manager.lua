@@ -40,6 +40,9 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Comment stuff out
+  use 'numToStr/Comment.nvim'
+
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
   if packer_bootstrap then
