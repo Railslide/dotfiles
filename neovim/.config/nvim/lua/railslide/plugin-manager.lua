@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
   use 'itchyny/lightline.vim'
 
   -- Linting
-  use 'dense-analysis/ale'
+  -- use 'dense-analysis/ale'
 
   -- Color scheme
   use 'navarasu/onedark.nvim'
@@ -42,6 +42,12 @@ return require('packer').startup(function(use)
 
   -- Comment stuff out
   use 'numToStr/Comment.nvim'
+
+  -- Lsp
+  -- Note: the next three lines MUST be in that order. See `:help mason-lspconfig-quickstart`
+  use 'williamboman/mason.nvim' -- Install and manage lsp servers, linters, and formatters
+  use 'williamboman/mason-lspconfig.nvim' -- Make Mason and lspconfig play nice together
+  use 'neovim/nvim-lspconfig'
 
   -- Automatically set up configurations if packer was newly installed
   -- This needs to be at the end after all plugins
