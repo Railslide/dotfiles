@@ -15,6 +15,6 @@ end
 mason_lspconfig.setup({
   ensure_installed = {
     'pyright',
-    'sumneko_lua',
+    'lua_ls',
    }
 })
