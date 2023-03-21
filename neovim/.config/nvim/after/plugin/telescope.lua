@@ -1,5 +1,5 @@
-local status_ok, telescope = pcall(require, 'telescope')
-if not status_ok then
+local telescope_status_ok, telescope = pcall(require, 'telescope')
+if not telescope_status_ok then
   print 'Could not find Telescope plugin'
   return
 end
@@ -9,8 +9,8 @@ live_grep and grep_string don't have a `find_command` option
 so we need to do this whole dance in order to include hidden
 files and directories.
 ]]
-local status_ok, telescope_config = pcall(require, 'telescope.config')
-if not status_ok then
+local telescope_config_status_ok, telescope_config = pcall(require, 'telescope.config')
+if not telescope_config_status_ok then
   print 'Could not find Telescope config'
   return
 end
@@ -35,8 +35,8 @@ telescope.setup({
 })
 
 -- Custom key mappings
-local status_ok, telescope_builtin = pcall(require, 'telescope.builtin')
-if not status_ok then
+local telescope_builtin_status_ok, telescope_builtin = pcall(require, 'telescope.builtin')
+if not telescope_builtin_status_ok then
   print 'Could not find Telescope builtin'
   return
 end
