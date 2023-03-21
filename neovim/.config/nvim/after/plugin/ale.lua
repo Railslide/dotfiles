@@ -1,6 +1,6 @@
 -- Fixers
 vim.g.ale_fixers = {
-  ['*'] = {'remove_trailing_lines', 'trim_whitespace'}
+  ['*'] = { 'remove_trailing_lines', 'trim_whitespace' }
 }
 
 vim.g.ale_sign_column_always = 1

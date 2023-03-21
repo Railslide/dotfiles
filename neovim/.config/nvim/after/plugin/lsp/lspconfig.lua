@@ -4,7 +4,7 @@ if not status then
 end
 
 -- Servers setup & server specific settings
-lspconfig['lua_ls'].setup{
+lspconfig['lua_ls'].setup {
   settings = {
     Lua = {
       -- make the language server recognize 'vim' global
@@ -14,7 +14,7 @@ lspconfig['lua_ls'].setup{
     }
   }
 }
-lspconfig['pyright'].setup{}
+lspconfig['pyright'].setup {}
 
 -- TODO: Add description to keymaps (maybe use a helper function?)
 
@@ -42,6 +42,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
 
+    vim.keymap.set('n', '<leader>fmt', function()
+      vim.lsp.buf.format { async = true }
+    end, opts)
     -- TODO: Figure out whether to keep the following keymaps (and sort them in case!)
     -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
     -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -52,9 +55,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
     --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     -- end, opts)
     -- vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
-    -- vim.keymap.set('n', '<leader>f', function()
-    --   vim.lsp.buf.format { async = true }
-    -- end, opts)
   end,
 })
-

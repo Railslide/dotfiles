@@ -21,7 +21,6 @@ vim.cmd([[
 
 -- Installed plugins
 return require('packer').startup(function(use)
-
   -- Packer (aka the plugin manager itself)
   use 'wbthomason/packer.nvim'
 
@@ -37,7 +36,7 @@ return require('packer').startup(function(use)
   -- Find all the things
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- Comment stuff out
@@ -45,7 +44,7 @@ return require('packer').startup(function(use)
 
   -- Lsp
   -- Note: the next three lines MUST be in that order. See `:help mason-lspconfig-quickstart`
-  use 'williamboman/mason.nvim' -- Install and manage lsp servers, linters, and formatters
+  use 'williamboman/mason.nvim'           -- Install and manage lsp servers, linters, and formatters
   use 'williamboman/mason-lspconfig.nvim' -- Make Mason and lspconfig play nice together
   use 'neovim/nvim-lspconfig'
 
@@ -59,6 +58,5 @@ return require('packer').startup(function(use)
     print '    Wait until Packer completes,'
     print '       then restart nvim'
     print '=================================='
-
   end
 end)
