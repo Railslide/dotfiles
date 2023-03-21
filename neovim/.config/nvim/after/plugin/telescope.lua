@@ -43,3 +43,4 @@ end
 
 vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
 vim.keymap.set('n', '<leader>fs', telescope_builtin.live_grep, {})
+vim.keymap.set('n', '<leader>dl', telescope_builtin.diagnostics, {})
