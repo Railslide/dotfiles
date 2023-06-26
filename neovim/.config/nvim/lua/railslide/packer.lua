@@ -43,8 +43,11 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
 
   -- Lsp
-  -- Note: the next three lines MUST be in that order. See `:help mason-lspconfig-quickstart`
-  use 'williamboman/mason.nvim'           -- Install and manage lsp servers, linters, and formatters
+  -- Note: the next three plugins MUST be installed in that order. See `:help mason-lspconfig-quickstart`
+  use {
+    'williamboman/mason.nvim',  -- Install and manage lsp servers, linters, and formatters
+    run = ":MasonUpdate"        -- :MasonUpdate updates registry contents
+  }
   use 'williamboman/mason-lspconfig.nvim' -- Make Mason and lspconfig play nice together
   use 'neovim/nvim-lspconfig'
 
