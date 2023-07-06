@@ -1,0 +1,56 @@
+import:
+  # - ~/.config/alacritty/themes/themes/nord.yaml
+  - ~/.config/alacritty/themes/norrsken.yml
+
+window:
+  dimensions:
+   columns: 80
+   lines: 24
+font:
+  normal:
+    family: SauceCodePro NFM
+    style: Regular
+  bold:
+    family: SauceCodePro NFM
+    style: Bold
+  italic:
+    family: SauceCodePro NFM
+    style: MediumItalic
+  bold_italic:
+    family: SauceCodePro NFM
+    style: BoldItalic
+  size: 12
+# draw_bold_text_with_bright_colors: true
+
+# Colors (Norrsken)
+colors:
+  # Default colors
+  primary:
+    background: '#2D3743'
+    foreground: '#D8DEE9'
+  cursor:
+    text: '#49B9C7'
+    cursor: '#F6F6F6'
+
+  # Normal colors
+  normal:
+    black:    '#000000'
+    red:      '#F15D22'
+    green:    '#73C48F'
+    yellow:   '#C4A000'
+    blue:     '#4894c7'
+    magenta:  '#AD7FA8'
+    cyan:     '#28b5b5'
+    white:    '#EEEEEC'
+
+  # Bright colors
+  bright:
+    black:    '#737272'
+    red:      '#FF0000'
+    green:    '#51A105'
+    yellow:   '#FFCE51'
+    blue:     '#3465A4'
+    magenta:  '#A741B8'
+    cyan:     '#06989A'
+    white:    '#D3D7CF'
+
