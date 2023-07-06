@@ -2,6 +2,13 @@
 # A collection of custom bash settings to be sourced in ~/.bashrc
 #
 
+# Enable color support for ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+   alias ls='ls --color=auto'
+   alias grep='grep --color=auto'
+fi
+
 # Aliases
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
