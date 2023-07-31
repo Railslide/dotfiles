@@ -1,7 +1,3 @@
-import:
-  # - ~/.config/alacritty/themes/themes/nord.yaml
-  - ~/.config/alacritty/themes/norrsken.yml
-
 window:
   dimensions:
    columns: 80
@@ -20,17 +16,16 @@ font:
     family: SauceCodePro NFM
     style: BoldItalic
   size: 12
-# draw_bold_text_with_bright_colors: true
 
 # Colors (Norrsken)
+# https://github.com/Railslide/norrsken
 colors:
-  # Default colors
   primary:
     background: '#2D3743'
     foreground: '#D8DEE9'
   cursor:
-    text: '#49B9C7'
-    cursor: '#F6F6F6'
+    text:       '#49B9C7'
+    cursor:     '#F6F6F6'
 
   # Normal colors
   normal:
