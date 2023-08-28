@@ -1,9 +1,9 @@
 return {
-  "williamboman/mason.nvim",
+  'williamboman/mason.nvim',
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
+    'williamboman/mason-lspconfig.nvim',
   },
-  -- build... TODO: run mason update somehow
+  build = ':MasonUpdate',
 
   config = function()
     require('mason').setup()
