@@ -1,5 +1,6 @@
 return {
   'itchyny/lightline.vim',
+  enabled=false,
 
   config = function()
     vim.g.lightline = {
