@@ -29,8 +29,9 @@ return {
     -- Custom key mappings
     local telescope_builtin = require('telescope.builtin')
 
-    vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
-    vim.keymap.set('n', '<leader>fs', telescope_builtin.live_grep, {})
-    vim.keymap.set('n', '<leader>dl', telescope_builtin.diagnostics, {})
+    vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, { desc = 'Fuzzy find files in cwd' })
+    vim.keymap.set('n', '<leader>fs', telescope_builtin.live_grep, { desc = 'Find string in cwd' })
+    vim.keymap.set('n', '<leader>fc', telescope_builtin.grep_string, { desc = 'Find string under the cursor in cwd' })
+    vim.keymap.set('n', '<leader>dl', telescope_builtin.diagnostics, { desc = 'Show diagnostic list' })
   end,
 }
