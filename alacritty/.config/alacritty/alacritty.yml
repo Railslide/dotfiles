@@ -49,3 +49,7 @@ colors:
     cyan:     '#06989A'
     white:    '#D3D7CF'
 
+# key mappings
+key_bindings:
+  # Ctrl+Shift+n -> Spawn a new Alacritty instance using current working directory.
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
