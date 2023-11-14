@@ -23,7 +23,7 @@ return {
         ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<C-e>'] = cmp.mapping.abort(),
-        ['<CR>'] = cmp.mapping.confirm({ select = false }), -- Don't implicitly select the first entry when hitting enter
+        ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Implicitly select the first entry when hitting enter
       }),
       sources = cmp.config.sources({
           { name = "nvim_lsp" },
