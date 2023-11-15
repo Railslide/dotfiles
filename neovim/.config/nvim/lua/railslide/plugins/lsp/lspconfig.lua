@@ -53,10 +53,14 @@ return {
     -- Autocompletion
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+    -- NOTE: not all servers listed below are installed by default.
+    -- Use :Mason to check the status and installing the ones you want.
+
     -- Servers not needing any special settings
     local servers = {
       'gopls',
       'pyright',
+      'tsserver',
     }
 
     for _, lsp in ipairs(servers) do
