@@ -9,7 +9,7 @@ myModMask  = mod4Mask
 -- Actions to perform whenever xmonad starts or is restarted
 myStartupHook = do
   -- TODO: add a shortcut for switching layouts
-  spawn "setxkbmap en,se,it"
+  spawn "setxkbmap -layout us,se,it"
 
 
 -- Run xmonad with the settings specified above
