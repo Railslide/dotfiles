@@ -2,12 +2,29 @@
 
 A repository holding my dotfiles.
 
+## Requirements
+
+- GNU Stow
+
+#### Application-specific dependencies (i.e. can be skipped if you don't plan to install a given application).
+
+Neovim
+  - Neovim >= 0.8.0
+  - Ripgrep
+
+Alacritty
+  - SouceCodePro nerd font
+
 ## Installation
 
-1. Install GNU Stow on the system
-2. Run `git submodule update --init --recursive` to pull submodules.
-3. Run `make stow-all` to install all the dotfiles.
-4. Check the [post-installation steps](POST_INSTALLATION.md).
+1. Add the following to `~/.bashrc`:
+```
+# Source custom settings
+if [ -f ~/.bash_custom ]; then
+    . ~/.bash_custom
+fi
+```
+2. Run `make install` to install all the dotfiles.
 
 ## Stowing a single dotfile
 
@@ -15,6 +32,13 @@ A repository holding my dotfiles.
 stow --dotfiles -t [DESTINATION] [DOTFILE_FOLDER]
 
 # e.g. stow --dotfiles -t ~ git
+```
+
+## Healthcheck
+
+Check dependencies and necessary settings. Run automatically when installing
+```
+make check-health
 ```
 
 ## Bulk commands
