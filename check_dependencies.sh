@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Helper functions to print consistent messages
 printstep()
 {
