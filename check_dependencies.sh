@@ -11,7 +11,7 @@ printok()
 
 # bash
 # neovim
-if [ "$(nvim --version)" ]; then
+if command -v nvim &> /dev/null; then
   echo -e '\nChecking Neovim dependencies...'
 
   min_nvim_version="v0.8.0"
@@ -22,7 +22,7 @@ if [ "$(nvim --version)" ]; then
     printok "Neovim version"
   fi
 
-  if [ "$(rg --version)" ]; then
+  if command -v rg &> /dev/null; then
     printok "Ripgrep"
   else
     printerror "Ripgrep not installed in the system!"
@@ -30,10 +30,10 @@ if [ "$(nvim --version)" ]; then
 fi
 
 # alacritty
-if [ "$(alacritty --version)" ]; then
+if command -v alacritty &> /dev/null; then
   echo -e "\nChecking Alacritty dependencies..."
 
-  if [ "$(fc-list | grep SauceCodePro)" ]; then
+  if fc-list | grep SauceCodePro &> /dev/null; then
     printok "Fonts"
   else
     printerror "SouceCodePro font not installed in the system!"
