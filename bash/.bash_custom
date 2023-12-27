@@ -29,6 +29,10 @@ eval "$(pyenv init -)"
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
 
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Load local bash settings if present
 if [ -f ~/.bash_local ]; then
 . ~/.bash_local
