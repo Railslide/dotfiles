@@ -1,6 +1,5 @@
 return {
   'SidOfc/carbon.nvim',
-  event = "VeryLazy",
 
   config = function ()
     require('carbon').setup({
