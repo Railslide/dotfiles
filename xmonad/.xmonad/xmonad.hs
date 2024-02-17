@@ -5,7 +5,6 @@ import XMonad.Hooks.EwmhDesktops
 
 -- Keybindings
 import XMonad.Util.EZConfig
-import Graphics.X11.ExtraTypes.XF86
 
 -- Status bar
 import XMonad.Hooks.DynamicLog
