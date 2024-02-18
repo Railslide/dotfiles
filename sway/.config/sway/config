@@ -43,8 +43,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 ### Input configuration
 input type:keyboard {
   xkb_layout "us,it,se"
-  xkb_options "grp:alt_shift_toggle"
-  xkb_options "ctrl:nocaps"
+  xkb_switch_layout "next"
+  # Map alt+shift to keyboard layout switcher and caps-lock to ctrl
+  xkb_options "grp:alt_shift_toggle, ctrl:nocaps"
 }
 
 input type:touchpad {
