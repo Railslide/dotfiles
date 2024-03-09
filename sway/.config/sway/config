@@ -141,11 +141,10 @@ input type:touchpad {
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    # Split layouts. Note that this follows how :splitv works input
+    # in vim/neovim, which is the opposite of sway defaults
+    bindsym $mod+b splitv
+    bindsym $mod+v splith
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
