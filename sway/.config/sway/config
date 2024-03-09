@@ -222,6 +222,6 @@ bar {
     }
 }
 
-exec_always pkill kanshi; kanshi &
+exec_always "pkill kanshi; kanshi &"
 
 include /etc/sway/config.d/*
