@@ -1,0 +1,3 @@
+# Don't inhibit idle if Spotify is playing
+[[node_blacklist]]
+name = "spotify"

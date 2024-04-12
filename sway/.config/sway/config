@@ -42,6 +42,12 @@ exec swayidle -w \
          timeout 301 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'playerctl pause' before-sleep 'swaylock -f -c 222B2E'
 
+# Don't lock when media is playing through Pipewire
+# Configuration for how and when to inhibit at:
+# ~/.config/wayland-pipewire-idle-inhibit/config.toml
+exec wayland-pipewire-idle-inhibit
+
+
 # Lock screen by triggering swayidle
 bindsym $mod+Escape exec killall -SIGUSR1 swayidle
 
