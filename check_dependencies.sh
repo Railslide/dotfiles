@@ -53,4 +53,41 @@ if command -v alacritty &> /dev/null; then
     printerror "SouceCodePro font not installed in the system!"
   fi
 fi
+
+# sway
+if command -v sway &> /dev/null; then
+  printstep "Sway dependencies"
+
+  sway_deps=(
+    "bemenu"
+    "foot"
+    "grim"
+    "j4-dmenu-desktop"
+    "kanshi"
+    "mako"
+    "playerctl"
+    "slurp"
+    "swaybg"
+    "swayidle"
+    "swaylock"
+    "waybar"
+    "wayland-pipewire-idle-inhibit"
+    "wpctl"
+  )
+
+  for dep in ${sway_deps[@]}; do
+    if command -v $dep  &> /dev/null; then
+      printok "${dep^}"
+    else
+      printerror "${dep^} not installed in the system!"
+    fi
+  done
+
+  if fc-list | grep "Font Awesome" &> /dev/null; then
+    printok "Fonts"
+  else
+    printerror "Font Awesome not installed in the system!"
+  fi
+  # check for kanshi config?
+fi
 echo
