@@ -15,6 +15,10 @@ Neovim
 Alacritty
   - SouceCodePro nerd font
 
+Sway
+  - Install everything in `sway_dependencies.txt`
+  - If you are using multiple monitor, remember to define the kanshi config
+
 ## Installation
 
 1. Add the following to `~/.bashrc`:
