@@ -58,36 +58,30 @@ fi
 if command -v sway &> /dev/null; then
   printstep "Sway dependencies"
 
-  sway_deps=(
-    "bemenu"
-    "foot"
-    "grim"
-    "j4-dmenu-desktop"
-    "kanshi"
-    "mako"
-    "playerctl"
-    "slurp"
-    "swaybg"
-    "swayidle"
-    "swaylock"
-    "waybar"
-    "wayland-pipewire-idle-inhibit"
-    "wpctl"
+  # Some deps cannot be checked with `command -v`
+  uncheckable_deps=(
+    "otf-font-awesome"
+    "wl-clipboard"
+    "xdg-desktop-portal-wlr"
   )
 
-  for dep in ${sway_deps[@]}; do
+  while read dep; do
+
+    if echo ${uncheckable_deps[@]} | grep -F -w $dep &> /dev/null; then
+      continue
+    fi
+
     if command -v $dep  &> /dev/null; then
       printok "${dep^}"
     else
       printerror "${dep^} not installed in the system!"
     fi
-  done
+  done < sway_dependencies.txt
 
   if fc-list | grep "Font Awesome" &> /dev/null; then
     printok "Fonts"
   else
     printerror "Font Awesome not installed in the system!"
   fi
-  # check for kanshi config?
 fi
 echo
