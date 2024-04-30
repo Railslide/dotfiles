@@ -18,6 +18,11 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Load git completion if available
+if [ -f /usr/share/git/completion/git-completion.bash ]; then
+  source /usr/share/git/completion/git-completion.bash
+fi
+
 # pipx autocompletion
 eval "$(register-python-argcomplete pipx)"
 
