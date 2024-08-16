@@ -17,6 +17,8 @@ set $term foot
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu j4-dmenu-desktop --display-binary  --dmenu='bemenu --ignorecase --list 20 --center --width-factor 0.5 --border 2 --fixed-height' | xargs swaymsg exec --
 
+set $scripts_dir ./scripts
+
 # Appearance
 default_border pixel 2
 gaps inner 2
@@ -97,7 +99,8 @@ input type:touchpad {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec ~/.config/sway/scripts/powermenu.sh
 #
 # Moving around:
 #
