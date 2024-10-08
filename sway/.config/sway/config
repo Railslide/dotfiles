@@ -99,10 +99,11 @@ input type:touchpad {
     bindsym $mod+Shift+c reload
 
     # Exit menu
+    # Note that the buttons get displayed in reverse order!
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' \
-      -B 'Shutdown' 'systemctl -i poweroff' \
+      -B 'Logout' 'swaymsg exit' \
       -B 'Reboot' 'systemctl -i reboot' \
-      -B 'Logout' 'swaymsg exit'
+      -B 'Shutdown' 'systemctl -i poweroff'
 #
 # Moving around:
 #
