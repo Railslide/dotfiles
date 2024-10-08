@@ -61,7 +61,7 @@ return {
       'gopls',
       'pyright',
       'rust_analyzer',
-      'tsserver',
+      'ts_ls',
     }
 
     for _, lsp in ipairs(servers) do
