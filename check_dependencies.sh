@@ -17,10 +17,18 @@ printok()
 
 # bash
 printstep "Bash settings"
-if grep .bash_custom ~/.bashrc &> /dev/null; then
+if grep -q .bash_custom ~/.bashrc; then
   printok ".bash_custom sourcing"
 else
   printerror ".bash_custom is not sourced in .bashrc!"
+fi
+
+# ssh
+printstep "ssh settings"
+if grep -q "Include config.d/*" ~/.ssh/config; then
+  printok "ssh custom config included"
+else
+  printerror "custom ssh config is not included in ./ssh/config!"
 fi
 
 # neovim
