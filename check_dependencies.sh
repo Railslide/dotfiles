@@ -35,7 +35,7 @@ fi
 if command -v nvim &> /dev/null; then
   printstep "Neovim dependencies"
 
-  min_nvim_version="v0.8.0"
+  min_nvim_version="v0.10.0"
   current_nvim_version=$(nvim --version | grep -Eo "v[0-9]+\.[0-9]+\.[0-9]+")
 
   if [ $(echo -e "${min_nvim_version}\n${current_nvim_version}" | sort | head -1) != "${min_nvim_version}" ]; then
