@@ -9,15 +9,22 @@ A repository holding my dotfiles.
 #### Application-specific dependencies (i.e. can be skipped if you don't plan to install a given application).
 
 Neovim
-  - Neovim >= 0.8.0
+  - Neovim >= 0.10.0
   - Ripgrep
-
-Alacritty
   - SouceCodePro nerd font
 
 Sway
   - Install everything in `sway_dependencies.txt`
   - If you are using multiple monitor, remember to define the kanshi config
+
+Ssh
+  - Add `Include config.d/*` at the top of your `./ssh/config`
+
+Foot
+  - SouceCodePro nerd font
+
+Alacritty
+  - SouceCodePro nerd font
 
 ## Installation
 
