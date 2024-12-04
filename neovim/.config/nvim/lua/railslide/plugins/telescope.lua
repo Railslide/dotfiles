@@ -32,9 +32,10 @@ return {
     vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, { desc = 'Find files in cwd' })
     vim.keymap.set('n', '<leader>fs', telescope_builtin.live_grep, { desc = 'Find string in cwd' })
     vim.keymap.set('n', '<leader>fc', telescope_builtin.grep_string, { desc = 'Find string under the cursor in cwd' })
+    vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, { desc = 'Find open buffers' })
 
     vim.keymap.set('n', '<leader>dl', telescope_builtin.diagnostics, { desc = 'Show diagnostic list' })
 
-    vim.keymap.set('n', '<leader>ls', telescope_builtin.treesitter, { desc = 'List symbols / Jump to symbol' }) -- requires nvim-treesitter
+    vim.keymap.set('n', '<leader>ls', telescope_builtin.treesitter, { desc = 'List symbols in current buffer' }) -- requires nvim-treesitter
   end,
 }
