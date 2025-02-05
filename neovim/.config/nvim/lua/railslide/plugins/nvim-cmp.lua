@@ -44,5 +44,9 @@ return {
         end
       },
     })
+
+    cmp.setup.filetype("carbon.explorer", {
+      enabled = false,
+    })
   end
 }
