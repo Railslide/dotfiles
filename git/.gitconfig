@@ -1,7 +1,39 @@
 [user]
 	name = Giulia Vergottini
 	email = hello@railslide.io
+
+[alias]
+        please = push --force-with-lease
+
+[branch]
+	sort = -committerdate
+
+[commit]
+	verbose = true
+
 [core]
 	excludesfile = ~/.gitignore_global
+        editor = vim
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+
+[help]
+	autocorrect = prompt
+
+[merge]
+	conflictstyle = zdiff3
+
 [push]
-	default = simple
+	followTags = true
+
+[tag]
+	sort = version:refname
