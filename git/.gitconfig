@@ -35,5 +35,9 @@
 [push]
 	followTags = true
 
+[rebase]
+        autosquash = true
+        autostash = true
+
 [tag]
 	sort = version:refname
