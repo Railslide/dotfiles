@@ -23,6 +23,9 @@ if [ -f /usr/share/git/completion/git-completion.bash ]; then
   source /usr/share/git/completion/git-completion.bash
 fi
 
+# Fzf keybindings
+eval "$(fzf --bash)"
+
 # pipx autocompletion
 eval "$(register-python-argcomplete pipx)"
 
