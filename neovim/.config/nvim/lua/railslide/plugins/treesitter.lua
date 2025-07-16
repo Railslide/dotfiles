@@ -14,6 +14,7 @@ return {
         "markdown",
         "python",
         "tsx",
+        "terraform",
         "typescript",
       },
       highlight = {

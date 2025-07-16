@@ -61,6 +61,7 @@ return {
       'gopls',
       'pyright',
       'rust_analyzer',
+      'terraformls',
       'ts_ls',
     }
 
