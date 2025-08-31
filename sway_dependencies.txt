@@ -13,6 +13,6 @@ swayidle
 swaylock
 waybar
 wayland-pipewire-idle-inhibit
+wireplumber
 wl-clipboard
-wpctl
 xdg-desktop-portal-wlr
