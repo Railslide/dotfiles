@@ -57,7 +57,7 @@ bindsym $mod+Escape exec killall -SIGUSR1 swayidle
 input type:keyboard {
   xkb_layout "us,it,se"
   # Map alt+shift to keyboard layout switcher and caps-lock to ctrl
-  xkb_options "grp:alt_shift_toggle, ctrl:nocaps"
+  xkb_options "grp:win_space_toggle, ctrl:nocaps"
 }
 
 input type:touchpad {
