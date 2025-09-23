@@ -7,7 +7,7 @@ return {
   },
 
   config = function ()
-    local lspconfig = require('lspconfig')
+
     -- TODO: Add description to keymaps (maybe use a helper function?)
 
     -- Global mappings.
@@ -55,14 +55,15 @@ return {
     }
 
     for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup {
+      vim.lsp.config(lsp, {
         capabilities = capabilities,
-      }
+      })
+      vim.lsp.enable(lsp)
     end
 
     -- Servers with custom settings
     -- IMPORTANT: remember to add `capabilities = capabilities` for autocompletion!
-    lspconfig['lua_ls'].setup {
+    vim.lsp.config('lua_ls', {
       capabilities = capabilities,
       settings = {
         Lua = {
@@ -72,7 +73,8 @@ return {
           },
         }
       }
-    }
+    })
+    vim.lsp.enable('lua_ls')
 
   end,
 }
