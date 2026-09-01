@@ -4,8 +4,7 @@ return {
   event = {"BufReadPre", "BufNewFile"},
 
   config = function ()
-    require("nvim-treesitter.configs").setup({
-      ensure_installed = {
+    require("nvim-treesitter").install({
         "bash",
         "go",
         "html",
@@ -15,7 +14,9 @@ return {
         "python",
         "tsx",
         "typescript",
-      },
+      })
+
+    require("nvim-treesitter").setup({
       highlight = {
         enable = true,
       },
